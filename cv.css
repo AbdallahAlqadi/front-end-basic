@@ -1,0 +1,281 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* تحسين الخط */
+    line-height: 1.8; /* زيادة تباعد الأسطر */
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* لون خلفية أخف */
+    color: #333; /* لون نص أوضح */
+    font-size: 18px; /* تكبير حجم الخط */
+}
+
+header {
+    background: #005bb5; /* لون أغمق */
+    color: #fff;
+    padding: 50px; /* زيادة padding */
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* إضافة ظل للعنصر */
+    animation: slideDown 1.5s ease-in-out forwards, bounce 1s infinite alternate; /* إضافة حركة ارتدادية */
+}
+
+nav {
+    background: #333; /* لون أغمق */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 30px; /* زيادة المسافة بين العناصر */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px; /* padding أفقي */
+    display: block;
+    transition: background 0.4s ease, transform 0.4s ease; /* زيادة مدة الانتقال */
+}
+
+nav ul li a:hover {
+    background: #444; /* لون داكن عند التحويم */
+    border-radius: 5px;
+    transform: scale(1.05); /* تقليص حجم التحويم */
+}
+
+section {
+    padding: 30px; /* زيادة padding */
+    background: #fff;
+    margin: 20px auto; /* استخدام auto لتمركز العنصر */
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* تحسين ظل العنصر */
+    max-width: 800px; /* تحديد عرض أقصى للقسم */
+    animation: fadeIn 2s ease-in-out forwards, slideIn 1s ease-in-out forwards; /* إضافة حركة دخول */
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background: #005bb5; /* لون أغمق للمهارات */
+    color: #fff;
+    padding: 15px; /* زيادة padding */
+    margin: 10px 0; /* زيادة المسافة بين العناصر */
+    border-radius: 5px;
+    display: inline-block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-5px); /* تقليل المسافة عند التحويم */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* تحسين ظل العنصر عند التحويم */
+}
+
+footer {
+    text-align: center;
+    padding: 25px; /* زيادة padding */
+    background: #005bb5; /* لون أغمق */
+    color: #fff;
+    margin-top: 20px;
+    animation: slideUp 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%); /* دخول من الجهة اليسرى */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* ارتفاع خفيف */* cv.css */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background: #e8f0fe; /* لون خلفية أفتح */
+            color: #333;
+            font-size: 18px;
+        }
+        
+        header {
+            background: #004085; /* لون أغمق */
+            color: #fff;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            animation: slideDown 1.5s ease-in-out forwards, bounce 1s infinite alternate;
+        }
+        
+        nav {
+            background: #007bff; /* لون أزرق زاهي */
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            margin: 0 30px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            transition: background 0.4s ease, transform 0.4s ease;
+        }
+        
+        nav ul li a:hover {
+            background: #0056b3; /* لون أغمق عند التحويم */
+            border-radius: 5px;
+            transform: scale(1.05);
+        }
+        
+        section {
+            padding: 30px;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            animation: fadeIn 2s ease-in-out forwards, slideIn 1s ease-in-out forwards;
+        }
+        
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+           
+            color: #fff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            display: inline-block;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+        
+        .skills-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #004085; /* لون أغمق */
+            color: #fff;
+            margin-top: 20px;
+            animation: slideUp 1.5s ease-in-out forwards;
+        }
+        
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from {
+                transform: translateY(100%);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        /
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
