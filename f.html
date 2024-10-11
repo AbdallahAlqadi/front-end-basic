@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        .animation-box {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        /* Fade In Animation */
+        .fade-in {
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Zoom In Animation */
+        .zoom-in {
+            animation: zoomIn 2s ease-in-out;
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Rotate Animation */
+        .rotate {
+            animation: rotate 4s infinite linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Move from Left Animation */
+        .move-left {
+            animation: moveLeft 3s ease-in-out;
+        }
+
+        @keyframes moveLeft {
+            0% {
+                transform: translateX(-300px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        /* Bounce Animation */
+        .bounce {
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-150px);
+            }
+            60% {
+                transform: translateY(-75px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Animations Demo</h1>
+
+    <div class="animation-box fade-in">Fade In</div>
+    <div class="animation-box zoom-in">Zoom In</div>
+    <div class="animation-box rotate">Rotate</div>
+    <div class="animation-box move-left">Move Left</div>
+    <div class="animation-box bounce">Bounce</div>
+
+</body>
+</html>

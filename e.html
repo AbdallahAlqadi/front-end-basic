@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أقوى الحركات في CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            animation: fadeInOut 4s infinite ease-in-out;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 50px auto;
+            background-color: #3498db;
+            animation: rotateAndScale 5s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        }
+
+        .text-fade {
+            font-size: 2em;
+            color: #e74c3c;
+            animation: fadeInOut 4s infinite ease-in-out;
+        }
+
+        .move-box {
+            width: 50px;
+            height: 50px;
+            background-color: #2ecc71;
+            position: relative;
+            animation: moveAround 6s infinite ease-in-out;
+        }
+
+        @keyframes rotateAndScale {
+            0% {
+                transform: scale(1) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.5) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+
+        @keyframes fadeInOut {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes moveAround {
+            0% {
+                left: 0;
+                top: 0;
+            }
+            25% {
+                left: 200px;
+                top: 0;
+            }
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                left: 0;
+                top: 200px;
+            }
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .animated-button1 {
+            position: relative;
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            color: white;
+            background-color: #5cad44;
+            border-radius: 10px;
+        }
+
+        .animated-button1 span {
+            position: absolute;
+            display: block;
+        }
+
+        .animated-button1 span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, white);
+            animation: btn-anim1 1s linear infinite;
+        }
+
+        .animated-button1 span:nth-child(2) {
+            bottom: 0;
+            right: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, white);
+            animation: btn-anim2 1s linear infinite;
+        }
+
+        .animated-button1 span:nth-child(3) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, white);
+            animation: btn-anim3 1s linear infinite;
+        }
+
+        .animated-button1 span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, white);
+            animation: btn-anim4 1s linear infinite;
+        }
+
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%, 100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes btn-anim2 {
+            0% {
+                right: -100%;
+            }
+            50%, 100% {
+                right: 100%;
+            }
+        }
+
+        @keyframes btn-anim3 {
+            0% {
+                top: -100%;
+            }
+            50%, 100% {
+                top: 100%;
+            }
+        }
+
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%, 100% {
+                bottom: 100%;
+            }
+        }
+
+        .animated-button1:hover {
+            background-color: #28e017;
+            color: #fff;
+            box-shadow: 0 0 20px #0d832a, 0 0 40px #0fa127, 0 0 60px #2bc91d;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>أقوى الحركات في CSS</h1>
+
+    <div class="box"></div>
+    <p class="text-fade">نص يتلاشى ويظهر</p>
+    <div class="move-box"></div>
+    
+    <a href="form.html" class="animated-button1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Button
+    </a>
+
+</body>
+</html>
