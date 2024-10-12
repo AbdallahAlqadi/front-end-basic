@@ -27,6 +27,11 @@
             color: white;
             font-size: 20px;
             border-radius: 10px;
+            transition: background-color 0.5s;
+        }
+
+        .animation-box:hover {
+            background-color: #2ecc71;
         }
 
         /* Fade In Animation */
@@ -102,17 +107,37 @@
             }
         }
 
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
 
     <h1>CSS Animations Demo</h1>
 
-    <div class="animation-box fade-in">Fade In</div>
-    <div class="animation-box zoom-in">Zoom In</div>
-    <div class="animation-box rotate">Rotate</div>
-    <div class="animation-box move-left">Move Left</div>
-    <div class="animation-box bounce">Bounce</div>
+    <button onclick="toggleAnimation('fade-in')">Toggle Fade In</button>
+    <button onclick="toggleAnimation('zoom-in')">Toggle Zoom In</button>
+    <button onclick="toggleAnimation('rotate')">Toggle Rotate</button>
+    <button onclick="toggleAnimation('move-left')">Toggle Move Left</button>
+    <button onclick="toggleAnimation('bounce')">Toggle Bounce</button>
+
+    <div class="animation-box fade-in" id="fade-in">Fade In</div>
+    <div class="animation-box zoom-in" id="zoom-in">Zoom In</div>
+    <div class="animation-box rotate" id="rotate">Rotate</div>
+    <div class="animation-box move-left" id="move-left">Move Left</div>
+    <div class="animation-box bounce" id="bounce">Bounce</div>
+
+    <script>
+        function toggleAnimation(animationClass) {
+            const element = document.getElementById(animationClass);
+            element.classList.toggle(animationClass);
+        }
+    </script>
 
 </body>
 </html>
